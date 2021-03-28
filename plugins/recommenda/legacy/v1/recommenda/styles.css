@@ -1,0 +1,223 @@
+.block_recommenda {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.block_recommenda p {
+	margin-bottom: 0;
+}
+
+.block_recommenda .form-h4 h4 {
+	font-size: 16px;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+.block_recommenda .form-items .form-group {
+	max-width: 600px;
+	margin: 2px auto;
+ }
+
+.block_recommenda .form-items .col-md-3, .block_recommenda .form-items .col-md-9 {
+	left: 50%;
+	transform: translateX(-50%);
+	overflow-x: hidden;
+}
+
+.bootstrapiso .carousel-control-prev-icon {
+	width:25px;
+    height:25px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'%555\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z\'/%3E%3C/svg%3E");
+}
+
+.bootstrapiso .carousel-control-next-icon {
+	width:25px;
+    height:25px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'%555\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z\'/%3E%3C/svg%3E");
+}
+
+.bootstrapiso .carousel-control-next {
+	left: 97%;
+}
+
+.bootstrapiso .carousel-control-prev,
+.bootstrapiso .carousel-control-next {
+    opacity: 0.4;
+    transition: opacity 0.15s ease;
+    width: 4%;
+}
+
+.bootstrapiso .carousel-control-prev {
+	left: -1%;
+}
+
+.bootstrapiso .carousel-control-prev:hover,
+.bootstrapiso .carousel-control-prev:focus,
+.bootstrapiso .carousel-control-next:hover,
+.bootstrapiso .carousel-control-next:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.block_recommenda #course-count {
+	float: right;
+	font-size: 13px;
+	font-weight: 300;
+	color: #888;
+	width: auto;
+	text-align: inherit;
+}
+
+.block_recommenda #myCarousel {
+    max-height:300px;
+}
+
+.block_recommenda input[type=submit] {
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+}
+
+.block_recommenda .main-block {
+	z-index: 1;
+} 
+
+.block_recommenda .relative-container {
+	position: relative;
+	float: right;
+	margin-top: -25px;
+}
+
+.block_recommenda input[name=acao] {
+	font-family: FontAwesome !important;
+	z-index: 2;
+	margin-top: 10px;
+	padding: 0 10px;
+	position: absolute !important;
+	left: -30px;
+	font-size: 20px;
+	background: white !important;
+	text-align: center;
+	width: auto;
+	height: auto;
+	color: black !important;
+	cursor: pointer;
+	border: none !important;
+	opacity: 0.2;
+}
+
+.block_recommenda input[name=acao]:hover {
+	transition: 0.5s;
+	opacity: 1;
+}
+
+.block_recommenda .summary_text {
+	overflow: hidden;
+    margin: 10px;
+	font-size: 16px;
+	font-weight: 300px;
+	color: #444;
+	border-top: 1px solid #999;
+}
+
+.block_recommenda .summary-div {
+	display: flex;
+	text-align: center;
+  	justify-content: center;
+  	align-items: center;
+	max-width: 66%;
+	padding: 0 25px;
+}
+
+.block_recommenda .courseimage {
+    float: left;
+    display: block;
+}
+
+.block_recommenda .coursename {
+	display: flex;
+	text-align: center;
+  	justify-content: center;
+  	align-items: center;
+    margin: 10px 20px;
+}
+
+.block_recommenda .coursename a {
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 40px;
+	color: #666;
+}
+
+.block_recommenda .carousel-inner {
+	max-height: 308px;
+}
+
+.block_recommenda .coursename a:hover {
+	color: #222;
+	transition: 0.5s;
+}
+
+
+.block_recommenda .indv_img {
+	display: block;
+    object-fit: fill;
+    transform: none;
+    width: 300px;
+    height: 300px;
+}
+
+.block_recommenda .mobile-coursename {
+	display: none;
+  	justify-content: center;
+  	text-align: center;
+  	align-items: center;
+	border-bottom: 1px solid #999;
+	margin: 20px;
+}
+
+.block_recommenda .mobile-coursename a {
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666;
+}
+
+.block_recommenda .mobile-coursename a:hover {
+	color: #222;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+
+	.block_recommenda .courseimage {
+		float: none;
+		margin-top: 20px;
+		object-fit: cover;
+	}
+
+	.block_recommenda .indv_img {
+    	width: 80%;
+    	margin-left: auto;
+    	margin-left: right;
+    	height: 250px;
+	}
+
+	.bootstrapiso .carousel-control-prev,
+	.bootstrapiso .carousel-control-next {
+    	width: 50%;
+    	left: static;
+	}
+
+	.block_recommenda #course-count {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
