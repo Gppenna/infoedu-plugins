@@ -36,7 +36,7 @@ class goalprogresshtml_form extends \moodleform {
         $buttonarray = array();
         $classarray = array('class' => 'form-submit');
         
-        $buttonarray[] = $mform->createElement('submit', 'saveandreturn', get_string('savechangesandreturn'), $classarray);
+        $buttonarray[] = $mform->createElement('submit', 'save', get_string('save'), $classarray);
         $buttonarray[] = $mform->createElement('cancel');
         $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
         $mform->closeHeaderBefore('buttonar');
@@ -55,7 +55,7 @@ class goalprogresshtml_form extends \moodleform {
         $goal = $DB->get_record('bga_goals',  ['id' => $data['goalid'] ]);
         $accruedprogress = $DB->get_record_sql('
             SELECT IFNULL(SUM(gp.progress), 0) as total
-            FROM moodle.mdl_bga_goal_progress gp
+            FROM mdl_bga_goal_progress gp
             WHERE gp.goalid = :goalid ',  
             ['goalid' => $data['goalid'] ]
         );
